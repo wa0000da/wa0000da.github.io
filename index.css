@@ -286,6 +286,10 @@ img {
   fill: currentColor;
 }
 
+.social-link svg text {
+  fill: var(--white);
+}
+
 .social-text-link {
   font-size: 29px;
   font-weight: 500;
