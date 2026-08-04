@@ -304,6 +304,16 @@ img {
   transform: translateY(-3px);
 }
 
+.orcid-link,
+.orcid-link:hover {
+  color: #a6ce39;
+}
+
+.orcid-link:hover {
+  background-color: var(--white);
+  border-color: #a6ce39;
+}
+
 .main-section-title {
   margin-bottom: 34px;
   padding: 21px 27px;
