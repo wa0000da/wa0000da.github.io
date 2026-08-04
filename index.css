@@ -99,6 +99,12 @@ img {
   letter-spacing: 0.03em;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .global-nav ul {
   display: flex;
   align-items: center;
@@ -151,6 +157,42 @@ img {
 
 .global-nav a:hover::after {
   width: 100%;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.55);
+  white-space: nowrap;
+}
+
+.language-button {
+  padding: 5px 2px;
+  color: rgba(255, 255, 255, 0.72);
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.language-button:hover,
+.language-button:focus-visible,
+.language-button.is-active {
+  color: var(--white);
+}
+
+.language-button.is-active {
+  border-bottom-color: var(--white);
+}
+
+.language-button:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 3px;
 }
 
 /* ========================================
@@ -258,20 +300,6 @@ img {
   transform: translateY(-3px);
 }
 
-/* ========================================
-   共通見出し
-======================================== */
-
-.section-label {
-  margin: 0 0 10px;
-
-  color: var(--accent-dark);
-
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-}
-
 .main-section-title {
   margin-bottom: 34px;
   padding: 21px 27px;
@@ -287,10 +315,6 @@ img {
   border-radius: 5px;
 
   box-shadow: 0 7px 20px rgba(40, 70, 90, 0.07);
-}
-
-.main-section-title .section-label {
-  margin-bottom: 3px;
 }
 
 .main-section-title h2 {
@@ -494,6 +518,11 @@ img {
     margin-bottom: 12px;
   }
 
+  .header-actions {
+    justify-content: space-between;
+    gap: 22px;
+  }
+
   .global-nav {
     overflow-x: auto;
   }
@@ -537,6 +566,28 @@ img {
 @media screen and (max-width: 620px) {
   body {
     font-size: 15px;
+  }
+
+  .header-actions {
+    align-items: flex-end;
+  }
+
+  .global-nav ul {
+    gap: 4px;
+  }
+
+  .global-nav a {
+    min-width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .language-switcher {
+    padding-bottom: 4px;
+  }
+
+  .language-button {
+    font-size: 12px;
   }
 
   .page-container {

@@ -21,21 +21,29 @@
       <div class="header-container">
         <a href="#top" class="site-title"> Kazuki Wada </a>
 
-        <nav class="global-nav" aria-label="メインメニュー">
+        <div class="header-actions">
+        <nav class="global-nav" aria-label="メインメニュー" data-aria-ja="メインメニュー" data-aria-en="Main menu">
           <ul>
             <li>
-              <a href="#top"> Home </a>
+              <a href="#top" data-ja="ホーム" data-en="Home"> ホーム </a>
             </li>
 
             <li>
-              <a href="#publications"> Publications </a>
+              <a href="#publications" data-ja="研究業績" data-en="Publications"> 研究業績 </a>
             </li>
 
             <li>
-              <a href="#contact"> Contact </a>
+              <a href="#contact" data-ja="連絡先" data-en="Contact"> 連絡先 </a>
             </li>
           </ul>
         </nav>
+
+        <div class="language-switcher" role="group" aria-label="言語切替" data-aria-ja="言語切替" data-aria-en="Language selector">
+          <button type="button" class="language-button is-active" data-language="ja" aria-pressed="true">日本語</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" class="language-button" data-language="en" aria-pressed="false">English</button>
+        </div>
+        </div>
       </div>
     </header>
 
@@ -54,10 +62,9 @@
           <div class="profile-information">
             <h1>Kazuki Wada</h1>
 
-            <p class="profile-affiliation">
-              Graduate School of Life Science and Systems Engineering<br />
-              Kyushu Institute of Technology<br />
-              Fukuoka, Japan
+            <p class="profile-affiliation" data-ja="九州工業大学大学院 生命体工学研究科&lt;br&gt;福岡県，日本" data-en="Graduate School of Life Science and Systems Engineering&lt;br&gt;Kyushu Institute of Technology&lt;br&gt;Fukuoka, Japan">
+              九州工業大学大学院 生命体工学研究科<br />
+              福岡県，日本
             </p>
 
             <div class="social-links">
@@ -78,49 +85,18 @@
                 </svg>
               </a>
 
-              <!-- X -->
-              <!-- href="#"を自分のXのURLに変更 -->
+              <!-- LinkedIn（個別プロフィールURLが分かればhrefを差し替えてください） -->
               <a
-                href="#"
-                class="social-link social-text-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X"
-                title="X"
-              >
-                X
-              </a>
-
-              <!-- YouTube -->
-              <!-- href="#"を自分のYouTubeのURLに変更 -->
-              <a
-                href="#"
+                href="https://www.linkedin.com/pub/dir/Kazuki/Wada"
                 class="social-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="YouTube"
-                title="YouTube"
+                aria-label="LinkedIn"
+                title="LinkedIn"
               >
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path
-                    d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 15.9 4.5 12 4.5s-7 .1-8.9.6A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 5 .6 8.9.6s7-.1 8.9-.6a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.8 15.3V8.7l5.7 3.3-5.7 3.3Z"
-                  />
-                </svg>
-              </a>
-
-              <!-- GitHub -->
-              <!-- href="#"を自分のGitHubプロフィールURLに変更 -->
-              <a
-                href="#"
-                class="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                title="GitHub"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M12 .7A11.5 11.5 0 0 0 8.4 23c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.4-4.1-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.6-1.4-5.6-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C15.9 4.7 17 5 17 5c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.9 5.4-5.6 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"
+                    d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.04H3.54V8.98H7.1v11.47ZM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0Z"
                   />
                 </svg>
               </a>
@@ -147,14 +123,12 @@
       <section id="publications" class="publications-section">
         <div class="page-container">
           <div class="main-section-title">
-            <p class="section-label">PUBLICATIONS</p>
-
-            <h2>Publications</h2>
+            <h2 data-ja="研究業績" data-en="Publications">研究業績</h2>
           </div>
 
           <!-- 学術論文 -->
           <section class="publication-category">
-            <h3>International Journal Papers</h3>
+            <h3 data-ja="国際学術論文" data-en="International Journal Papers">国際学術論文</h3>
 
             <ol class="publication-list">
               <li>
@@ -214,9 +188,9 @@
 
           <!-- 国際会議 -->
           <section class="publication-category">
-            <h3>International Conference Proceedings</h3>
+            <h3 data-ja="国際会議論文" data-en="International Conference Proceedings">国際会議論文</h3>
 
-            <p class="coming-soon">Coming soon.</p>
+            <p class="coming-soon" data-ja="準備中です。" data-en="Coming soon.">準備中です。</p>
 
             <!--
             追加するときは以下の形式を使用します。
@@ -245,20 +219,20 @@
 
           <!-- 国内学会 -->
           <section class="publication-category">
-            <h3>Domestic Conference Proceedings</h3>
+            <h3 data-ja="国内学会発表" data-en="Domestic Conference Proceedings">国内学会発表</h3>
 
-            <p class="coming-soon">Coming soon.</p>
+            <p class="coming-soon" data-ja="準備中です。" data-en="Coming soon.">準備中です。</p>
           </section>
 
           <!-- 受賞 -->
           <section class="publication-category">
-            <h3>Awards and Fellowships</h3>
+            <h3 data-ja="受賞・フェローシップ" data-en="Awards and Fellowships">受賞・フェローシップ</h3>
 
             <ul class="award-list">
               <li>
                 <span class="award-year"> 2026 </span>
 
-                <span>
+                <span data-ja="日本学術振興会 特別研究員 DC1" data-en="Japan Society for the Promotion of Science Research Fellowship for Young Scientists, DC1">
                   Japan Society for the Promotion of Science Research Fellowship
                   for Young Scientists, DC1
                 </span>
@@ -267,7 +241,7 @@
               <li>
                 <span class="award-year"> 2024 </span>
 
-                <span> Best Student Presentation Award </span>
+                <span data-ja="学生優秀発表賞" data-en="Best Student Presentation Award"> 学生優秀発表賞 </span>
               </li>
             </ul>
           </section>
@@ -279,13 +253,11 @@
         <div class="page-container">
           <div class="contact-inner">
             <div>
-              <p class="section-label">CONTACT</p>
-
-              <h2>Contact</h2>
+              <h2 data-ja="連絡先" data-en="Contact">連絡先</h2>
             </div>
 
             <div class="contact-information">
-              <p>Research inquiries and collaboration proposals are welcome.</p>
+              <p data-ja="研究に関するお問い合わせや共同研究のご相談を歓迎します。" data-en="Research inquiries and collaboration proposals are welcome.">研究に関するお問い合わせや共同研究のご相談を歓迎します。</p>
 
               <a href="mailto:wada.kazuki812@mail.kyutech.jp">
                 wada.kazuki812@mail.kyutech.jp
@@ -304,5 +276,45 @@
         <p>&copy; 2026 Kazuki Wada. All Rights Reserved.</p>
       </div>
     </footer>
+    <script>
+      (() => {
+        const buttons = document.querySelectorAll("[data-language]");
+        const translatableElements = document.querySelectorAll("[data-ja][data-en]");
+
+        const setLanguage = (language) => {
+          document.documentElement.lang = language;
+          document.title = language === "ja" ? "Kazuki Wada | 研究者個人ページ" : "Kazuki Wada | Researcher";
+          document.querySelector('meta[name="description"]').content = language === "ja"
+            ? "Kazuki Wadaの研究業績や活動を紹介する個人ウェブサイトです。"
+            : "The personal website of Kazuki Wada, featuring research publications and activities.";
+
+          translatableElements.forEach((element) => {
+            element.innerHTML = element.dataset[language];
+          });
+
+          document.querySelectorAll("[data-aria-ja][data-aria-en]").forEach((element) => {
+            element.setAttribute("aria-label", element.dataset[`aria${language === "ja" ? "Ja" : "En"}`]);
+          });
+
+          buttons.forEach((button) => {
+            const isActive = button.dataset.language === language;
+            button.classList.toggle("is-active", isActive);
+            button.setAttribute("aria-pressed", String(isActive));
+          });
+
+          localStorage.setItem("preferredLanguage", language);
+        };
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => setLanguage(button.dataset.language));
+        });
+
+        const savedLanguage = localStorage.getItem("preferredLanguage");
+        const initialLanguage = savedLanguage === "en" || savedLanguage === "ja"
+          ? savedLanguage
+          : (navigator.language.startsWith("ja") ? "ja" : "en");
+        setLanguage(initialLanguage);
+      })();
+    </script>
   </body>
 </html>
