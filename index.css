@@ -211,8 +211,11 @@ a {
 }
 
 .profile-image-wrapper::before {
+  content: none;
+}
+
+.profile-placeholder {
   color: var(--accent-dark);
-  content: "COMING SOON";
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.14em;
