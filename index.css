@@ -211,11 +211,11 @@ a {
 }
 
 .profile-image-wrapper::before {
-  color: var(--accent-light);
-  content: "KW";
-  font-size: clamp(64px, 10vw, 112px);
-  font-weight: 750;
-  letter-spacing: -0.08em;
+  color: var(--accent-dark);
+  content: "COMING SOON";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
 }
 
 .profile-image-wrapper::after {
@@ -497,7 +497,7 @@ a {
 .presentation-award {
   display: inline-block;
   margin-left: 8px;
-  color: var(--accent-dark);
+  color: #a64f4a;
   font-weight: 750;
 }
 
