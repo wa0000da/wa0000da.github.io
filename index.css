@@ -518,6 +518,13 @@ a {
   content: "—";
 }
 
+.publication-review {
+  color: var(--text-main);
+  font-size: 0.85em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .publication-links {
   display: flex;
   flex-wrap: wrap;
