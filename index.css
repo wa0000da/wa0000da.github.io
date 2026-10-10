@@ -504,6 +504,12 @@ a {
   font-weight: 750;
 }
 
+.presentation-award-block {
+  display: block;
+  margin-top: 4px;
+  margin-left: 0;
+}
+
 .category-review {
   display: block;
   margin-top: 8px;
